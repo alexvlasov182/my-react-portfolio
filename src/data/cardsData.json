@@ -27,6 +27,6 @@
   {
     "title": "Star DB",
     "description": "Tool that helps users to choose and buy healthy food",
-    "image": "src/assets/images/star-db.png"
+    "cover_image": "src/assets/images/star-db.png"
   }
 ]
