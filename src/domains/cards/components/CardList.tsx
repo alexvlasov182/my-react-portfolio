@@ -1,61 +1,22 @@
 import React from "react";
-import { Layout, Menu, theme } from "antd";
-import type { MenuProps } from "antd";
-import WorkMainTitle from "../domains/works/components/WorkMainTitle.tsx";
-import WorkDescription from "../domains/works/components/WorkDescription.tsx";
-import CardList from "../domains/works/components/CardList.tsx";
+import CardItem from "./CardItem";
+import cardsData from "../../../data/cardsData.json";
 
-// @ts-ignore
-import faceImage from "../assets/images/front-img.png";
+import styles from "./Cards.module.scss";
 
-const { Header, Content, Footer } = Layout;
-
-const items: MenuProps["items"] = ["Work", "About", "CV"].map((key) => ({
-  key,
-  label: `${key}`,
-}));
-const App: React.FC = () => {
-  const {
-    token: { colorBgContainer, borderRadiusLG },
-  } = theme.useToken();
-
-  return (
-    <Layout>
-      <Header
-        style={{ display: "flex", alignItems: "center", background: "#fff" }}
-      >
-        <div className="demo-logo">Anastasiia Vlasova</div>
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={["2"]}
-          items={items}
-          style={{
-            flex: 1,
-            minWidth: 0,
-            backgroundColor: "#fff",
-            justifyContent: "end",
-          }}
+const CardList: React.FC = () => (
+  <div className={styles.workMainContainer}>
+    <div className={styles.cardWrapper}>
+      {cardsData.map((card, index) => (
+        <CardItem
+          key={index}
+          title={card.title}
+          description={card.description}
+          cover_image={card.cover_image}
         />
-      </Header>
-      <Content style={{ padding: "0 0px", background: colorBgContainer }}>
-        <div
-          style={{
-            minHeight: 168,
-            borderRadius: borderRadiusLG,
-          }}
-        >
-          <WorkMainTitle />
-          <WorkDescription />
-          <CardList />
-        </div>
-      </Content>
-      <Footer style={{ textAlign: "center" }}>
-        Anastasiia Vlasova Design ©{new Date().getFullYear()} Created by
-        Oleksandr Vlasov
-      </Footer>
-    </Layout>
-  );
-};
+      ))}
+    </div>
+  </div>
+);
 
-export default App;
+export default CardList;
