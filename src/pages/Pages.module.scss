@@ -1,0 +1,84 @@
+// Home page
+
+li {
+  color: #333333 !important;
+}
+
+.layout {
+  min-height: 100vh !important;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  flex: 1;
+  justify-content: flex-end;
+  background-color: #fff;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ant-color-bg-container);
+  background: #fff;
+}
+
+.container {
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
+  border-radius: var(--ant-border-radius-lg);
+  background: #fff;
+}
+
+.mainTitle {
+  margin-bottom: 8px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.subtitle {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.projectTitle {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.name,
+.js {
+  color: #1677ff;
+}
+
+.footer {
+  text-align: center;
+  background: #f0f2f5;
+  padding: 12px;
+}

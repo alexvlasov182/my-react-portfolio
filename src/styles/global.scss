@@ -1,0 +1,164 @@
+/* Basic CSS reset to eliminate default margins, paddings, and other inconsistencies */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* Sets the root font-size for easier scaling (1rem = 16px) */
+  line-height: 1.5; /* Default line height */
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+  -webkit-font-smoothing: antialiased; /* Improve font rendering on macOS and iOS */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif; /* Use a web-safe font as a fallback */
+  font-weight: 400;
+  font-size: 1rem; /* 16px */
+  color: #333; /* Default text color */
+  background-color: #f4f4f4; /* Light background color */
+  line-height: 1.6; /* Optimal readability */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh; /* Ensures body takes up at least full viewport height */
+}
+
+/* Box-sizing for all elements to include padding and border in the element's width and height */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-style: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+}
+
+/* Global link styling */
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Base font sizing and paragraph spacing */
+p {
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
+
+/* Forms */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  line-height: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Default scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
