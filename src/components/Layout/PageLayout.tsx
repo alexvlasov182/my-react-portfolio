@@ -9,7 +9,17 @@ const { Header, Content, Footer } = Layout;
 const items: MenuProps["items"] = [
   { key: "work", label: <Link to="/">Work</Link> },
   { key: "about", label: <Link to="/about">About</Link> },
-  { key: "about", label: <Link to="/cv">CV</Link> },
+  {
+    key: "cv",
+    label: (
+      <Link
+        to="https://drive.google.com/file/d/13hDUCEMhbznp9z5s-lc0jh4zGHROZxHa/view?usp=sharing"
+        target="_blank"
+      >
+        CV
+      </Link>
+    ),
+  },
 ];
 
 interface PageLayoutProps {

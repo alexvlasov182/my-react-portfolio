@@ -44,16 +44,22 @@ li {
 
 .mainTitle {
   margin-bottom: 8px;
+  text-align: left;
+
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
 }
 
 .subtitle {
+  text-align: left;
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
+  margin: 0 auto;
 }
 
 .description {
+  text-align: left;
+  margin-top: 8px;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
@@ -82,4 +88,24 @@ li {
   text-align: center;
   background: #f0f2f5;
   padding: 12px;
+  background-color: #fff;
+}
+
+.informationBlock {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  display: block;
+}
+
+.contentPadding {
+  padding: 0px 24px 0px 24px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

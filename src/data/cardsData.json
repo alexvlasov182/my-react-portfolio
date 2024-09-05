@@ -2,31 +2,37 @@
   {
     "title": "React Blog",
     "description": "Tool that enables automatic reconciliation of all payment flows",
-    "cover_image": "src/assets/images/blog.png"
+    "cover_image": "src/assets/images/ux-ui.png",
+    "technologies": ["React", "Redux", "React-Router"]
   },
   {
     "title": "UX/UI Portfolio",
     "description": "Test automation cloud platform",
-    "cover_image": "src/assets/images/ux-ui.png"
+    "cover_image": "src/assets/images/ux-ui.png",
+    "technologies": ["React", "Redux", "Axios"]
   },
   {
     "title": "Star DB",
     "description": "System where procurement activities can be tracked and measured",
-    "cover_image": "src/assets/images/star-db.png"
+    "cover_image": "src/assets/images/ux-ui.png",
+    "technologies": ["React", "Redux"]
   },
   {
     "title": "React Blog",
     "description": "Specification tool for desktop, web, mobile and API software products",
-    "cover_image": "src/assets/images/blog.png"
+    "cover_image": "src/assets/images/ux-ui.png",
+    "technologies": ["React-Router"]
   },
   {
     "title": "UX/UI Portfolio",
     "description": "Tool for managing personal and business life",
-    "cover_image": "src/assets/images/ux-ui.png"
+    "cover_image": "src/assets/images/ux-ui.png",
+    "technologies": ["Node"]
   },
   {
     "title": "Star DB",
     "description": "Tool that helps users to choose and buy healthy food",
-    "cover_image": "src/assets/images/star-db.png"
+    "cover_image": "src/assets/images/ux-ui.png",
+    "technologies": ["React", "Redux", "Node.js", "Fetch"]
   }
 ]
