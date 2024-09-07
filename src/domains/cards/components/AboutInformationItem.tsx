@@ -6,7 +6,7 @@ const AboutInformationList: React.FC = () => {
     <div className={styles.informationBlock}>
       <h1 className={styles.mainTitle}>A little bit about myself 💬</h1>
       <h3 className={styles.subtitle}>
-        <span className={styles.name}>Junior</span> Frontend Engineer
+        <span className={styles.name}></span> Front-End Engineer
       </h3>
       <p className={styles.description}>
         As a junior React Developer, I am at the beginning of an exciting

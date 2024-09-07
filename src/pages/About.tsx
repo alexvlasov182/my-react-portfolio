@@ -34,8 +34,6 @@ const About: React.FC = () => {
             <Button type="primary">Resume</Button>
           </Link>
         </div>
-
-        {/* <h2 className={styles.projectTitle}>Projects</h2> */}
       </div>
     </PageLayout>
   );

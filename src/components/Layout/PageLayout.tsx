@@ -30,10 +30,15 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
   return (
     <Layout className={styles.layout}>
       <Header className={styles.header}>
-        <div className={styles.logo}>
+        <Link
+          className={styles.logo}
+          style={{ textDecoration: "none", color: "#000" }}
+          to="/"
+        >
           React<span className={styles.js}>JS</span>
           <span className={styles.dot}>.</span>
-        </div>
+        </Link>
+
         <Menu
           theme="dark"
           mode="horizontal"

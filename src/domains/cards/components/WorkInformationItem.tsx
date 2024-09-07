@@ -8,7 +8,7 @@ const WorkInformationList: React.FC = () => {
         Hi, <span className={styles.name}>I'm Oleksandr</span> 👋
       </h1>
       <h3 className={styles.subtitle}>
-        <span className={styles.name}>Junior</span> Frontend Engineer
+        <span className={styles.name}></span> Front-End Engineer
       </h3>
       <p className={styles.description}>
         I'm Sasha, a junior front-end engineer. I enjoy building software that’s
