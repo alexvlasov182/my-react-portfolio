@@ -13,7 +13,7 @@ const items: MenuProps["items"] = [
     key: "cv",
     label: (
       <Link
-        to="https://drive.google.com/file/d/13hDUCEMhbznp9z5s-lc0jh4zGHROZxHa/view?usp=sharing"
+        to="https://drive.google.com/file/d/1WMarOb_wGE5xL-jhpGTOnhxRaey2gs7n/view?usp=sharing"
         target="_blank"
       >
         CV
