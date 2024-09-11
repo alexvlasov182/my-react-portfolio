@@ -2,19 +2,19 @@
   {
     "title": "React Blog",
     "description": "Tool that enables automatic reconciliation of all payment flows",
-    "cover_image": "src/assets/images/ux-ui.png",
+    "cover_image": "src/assets/images/star-db.png",
     "technologies": ["React", "Redux", "React-Router"]
   },
   {
     "title": "UX/UI Portfolio",
     "description": "Test automation cloud platform",
-    "cover_image": "src/assets/images/ux-ui.png",
+    "cover_image": "src/assets/images/blog.png",
     "technologies": ["React", "Redux", "Axios"]
   },
   {
     "title": "Star DB",
     "description": "System where procurement activities can be tracked and measured",
-    "cover_image": "src/assets/images/ux-ui.png",
+    "cover_image": "src/assets/images/star-db.png",
     "technologies": ["React", "Redux"]
   },
   {

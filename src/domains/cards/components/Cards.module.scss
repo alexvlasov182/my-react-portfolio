@@ -1,15 +1,8 @@
-.cardWrapper {
+.cardListWrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
-}
-
-.workMainContainer {
-  display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 40px;
 }
 
 .groupButton {
@@ -17,4 +10,30 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.card {
+  width: calc(50% - 100px);
+  min-height: 400px;
+  box-sizing: border-box;
+}
+
+.cardImage {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1080px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .cardImage {
+    height: 150px;
+  }
 }

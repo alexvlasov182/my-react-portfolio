@@ -25,11 +25,10 @@ const CardItem: React.FC<CardItemProps> = ({
   color,
   technologies = [],
 }) => (
-  <Card
-    hoverable
-    style={{ width: "45%", marginBottom: "20px", backgroundColor: color }}
-    cover={cover_image ? <img alt="card" src={cover_image} /> : null}
-  >
+  <Card hoverable className={styles.card} style={{ backgroundColor: color }}>
+    {cover_image && (
+      <img src={cover_image} alt={title} className={styles.cardImage} />
+    )}
     <h2>{title}</h2>
     <p>{description}</p>
     <div className={styles.groupButton}>
