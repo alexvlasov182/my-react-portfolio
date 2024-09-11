@@ -25,24 +25,30 @@ const CardItem: React.FC<CardItemProps> = ({
   color,
   technologies = [],
 }) => (
-  <Card hoverable className={styles.card} style={{ backgroundColor: color }}>
+  <Card
+    hoverable
+    className={styles.card}
+    style={{ backgroundColor: color, position: "relative", height: "400px" }}
+  >
+    <div className={styles.cardContent}>
+      <h2 className={styles.cardTitle}>{title}</h2>
+      <p className={styles.cardDescription}>{description}</p>
+      <div className={styles.technologies}>
+        {technologies.map((tech, index) => (
+          <Button
+            key={index}
+            type="primary"
+            ghost
+            style={{ borderColor: techColors[tech], color: techColors[tech] }}
+          >
+            {tech}
+          </Button>
+        ))}
+      </div>
+    </div>
     {cover_image && (
       <img src={cover_image} alt={title} className={styles.cardImage} />
     )}
-    <h2>{title}</h2>
-    <p>{description}</p>
-    <div className={styles.groupButton}>
-      {technologies.map((tech, index) => (
-        <Button
-          key={index}
-          type="primary"
-          ghost
-          style={{ borderColor: techColors[tech], color: techColors[tech] }}
-        >
-          {tech}
-        </Button>
-      ))}
-    </div>
   </Card>
 );
 

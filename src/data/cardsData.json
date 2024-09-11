@@ -8,7 +8,7 @@
   {
     "title": "UX/UI Portfolio",
     "description": "Test automation cloud platform",
-    "cover_image": "src/assets/images/blog.png",
+    "cover_image": "src/assets/images/ux-ui.png",
     "technologies": ["React", "Redux", "Axios"]
   },
   {
